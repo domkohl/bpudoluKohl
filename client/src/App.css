@@ -1,0 +1,176 @@
+/* CSS pro Synfusion scheduler START */
+.e-schedule .e-appointment-details {
+  padding: 0 !important;
+  display: table !important;
+}
+
+.template-wrap {
+  padding-bottom: 100%;
+  text-align: center;
+  justify-content: center;
+  overflow: hidden;
+}
+/* CSS pro Synfusion scheduler END */
+
+/*CSS Bootstrap START*/
+
+/*CSS Footer START zasjisteni fotoru vzdy dole*/
+html,
+body {
+  height: 100%;
+}
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/*CSS Footer EWND*/
+
+/*CSS Menu START*/
+.hidden {
+  display: none;
+}
+/*CSS Menu END*/
+
+/*CSS LandScreen START*/
+/* Hero START*/
+.hero {
+  position: relative;
+  height: 100vh;
+  background-color: blue;
+  overflow: hidden;
+}
+.hero__video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.caption {
+  position: absolute;
+  top: 37%;
+  width: 100%;
+  color: white;
+}
+
+.caption h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-shadow: 0.5rem 0.1rem 0.3rem black;
+  padding-bottom: 1rem;
+}
+
+.caption h3 {
+  font-size: 2rem;
+  text-shadow: 0.3rem 0.1rem 0.5rem black;
+  padding-bottom: 1.6rem;
+}
+
+.hero__scroll-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  z-index: 1;
+  color: --bs-primary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.hero__scroll-btn .bi {
+  transition-delay: 0.8s;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+/* Hero END*/
+/*CSS LandScreen END*/
+
+.rdrDefinedRangesWrapper {
+  display: none;
+}
+
+/*CSS imagige grid START*/
+.rowGrid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.columnGrid {
+  -ms-flex: 33.3%;
+  flex: 33.3%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.columnGrid img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout  */
+@media screen and (max-width: 800px) {
+  .columnGrid {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout */
+@media screen and (max-width: 600px) {
+  .columnGrid {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/*CSS imagige grid END*/
+
+/*CSS krizek pokoje START*/
+
+.cross:after {
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "\00d7";
+  font-size: 25px; 
+  color: var(--bs-danger); 
+  line-height: 1px;
+}
+
+/*obrazky v okolí*/
+.imgMaxHeight {
+  object-fit: scale-down;
+  max-height: 240px;
+}
+
+/*table bunky*/
+.minSizeRoom{
+  min-width: 100px;
+}
+.minSizeCount{
+  min-width: 60px;
+}

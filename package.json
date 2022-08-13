@@ -1,0 +1,34 @@
+{
+  "name": "bc_udolu_private",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build -prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/domkohl/bc_udolu_private.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/domkohl/bc_udolu_private/issues"
+  },
+  "homepage": "https://github.com/domkohl/bc_udolu_private#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.3",
+    "mongoose": "^6.0.12",
+    "node-cron": "^3.0.0",
+    "nodemailer": "^6.7.2",
+    "nodemon": "^2.0.13",
+    "validator": "^13.7.0"
+  }
+}
